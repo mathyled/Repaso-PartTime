@@ -8,6 +8,14 @@ function amoungUs(tripulacion, impostor){
     //     inocentes = ["verde"]
     //Tu codigo:
 
+    var inocentes = []
+    for(var x=0;x<tripulacion.length;x++){
+      if(tripulacion[x]!==impostor){
+        inocentes.push(tripulacion[x])
+      }
+    }
+    return inocentes
+
 }
 
 function grupalOrIndividual(deportes, modoDeJuego){
@@ -24,6 +32,14 @@ function grupalOrIndividual(deportes, modoDeJuego){
     //     respuesta si se pasa "individual" por parametro : ["ajedrez"]
     // Tu código:
 
+    var result = [];
+    for(x=0;x<deportes.length;x++){
+      if(deportes[x].modo === modoDeJuego){
+        result.push(deportes[x].nombre)
+      } 
+    }
+    return result
+
 }
 
 function numSeguido(numeros){
@@ -34,6 +50,12 @@ function numSeguido(numeros){
     // respuesta: true
     // Tu código:
 
+    for(x=0;x<numeros.length-1;x++){
+        if(numeros[x]===numeros[x+1]){
+          return true
+        }
+      }
+      return false        
 }
 
 function manejoDeArreglos(carrito){
@@ -49,6 +71,18 @@ function manejoDeArreglos(carrito){
     // mayores a 500 usando .filter
     // por ultimo devolver la suma de todos los resultados usando .reduce
     // Tu código:
+
+
+    var precios = carrito.map(function(elemento){
+        return elemento.precio
+      })
+      var preciosFiltrados = precios.filter(function(elemento){
+        return elemento>500
+      })
+      var total = preciosFiltrados.reduce(function(acumulador, cadaUnoDeLosPrecios){
+        return acumulador + cadaUnoDeLosPrecios
+      })
+      return total
 
 }
 

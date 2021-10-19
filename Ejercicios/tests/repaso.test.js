@@ -16,13 +16,13 @@ describe('amoungUs(tripulacion, impostor)', function() {
   describe('grupalOrIndividual(deportes, modoDeJuego)', function() {
     it('Deberia devolver un arreglo con los deportes del modo ya sea grupal o individual', function() {
       expect(grupalOrIndividual([{nombre: "football", modo: "grupal"}, {nombre: "volleyball", modo: "grupal"}, {nombre: "ajedrez", modo: "individual"}, {nombre: "rugby", modo: "grupal"}, {nombre: "esgrima", modo: "individual"}], "individual")).toEqual(["ajedrez", "esgrima"]);
-      expect(grupalOrIndividual([{nombre: "football", modo: "grupal"}, {nombre: "volleyball", modo: "grupal"}, {nombre: "ajedrez", modo: "individual"}, {nombre: "rugby", modo: "grupal"}, {nombre: "esgrima", modo: "individual"}], "grupal")).toEqual(["football", "voleyball", "rugby"]);
+      expect(grupalOrIndividual([{nombre: "football", modo: "grupal"}, {nombre: "volleyball", modo: "grupal"}, {nombre: "ajedrez", modo: "individual"}, {nombre: "rugby", modo: "grupal"}, {nombre: "esgrima", modo: "individual"}], "grupal")).toEqual(["football", "volleyball", "rugby"]);
     });
   });
   
   describe('numSeguido(numeros)', function() {
     it('Deberia devolver "true" si hay 2 numeros iguales seguidos y "false" si no', function() {
-      expect(numSeguido([1, 2, 3, 4, 4, 3])).toEqual(true);
+      expect(numSeguido([1, 2, 2, 20, 4, 3])).toEqual(true);
       expect(numSeguido([1, 2, 3, 4, 5, 6])).toEqual(false);
     });
   });
