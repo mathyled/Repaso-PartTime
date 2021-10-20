@@ -4,6 +4,7 @@ const {
     grupalOrIndividual,
     numSeguido,
     manejoDeArreglos,
+    premios,
 } = require('../repaso');
 
 describe('amoungUs(tripulacion, impostor)', function() {
@@ -30,5 +31,11 @@ describe('amoungUs(tripulacion, impostor)', function() {
   describe('manejoDeArreglos(carrito)', function() {
     it('Deberias devolver el resultado filtrado por .map y .filter y reducido con .reduce', function() {
       expect(manejoDeArreglos([{nombre: "libro", precio: 1500, id: 1},{nombre: "planta", precio: 3000, id: 2},{nombre: "maceta", precio: 300, id: 3}])).toEqual(4500);
+    });
+  });
+
+  describe('premios(aulas)', function() {
+    it('Deberias devolver un arreglo con las aulas con abanderados', function() {
+      expect(premios([[1, {division:"a", abanderado: true}],[1, {division:"b", abanderado: false}], [2, {division:"a", abanderado: false}], [2, {division:"b", abanderado: true}]])).toEqual(["1a", "2b"]);
     });
   });

@@ -52,6 +52,23 @@ function manejoDeArreglos(carrito){
 
 }
 
+function premios(aulas){
+  //Una escuela va a entregar premios a las aulas que tengan abanderados
+  //Esta funcion recibe un arreglo de arreglos donde cada uno de ellos tiene 
+  //en la primera posicion el año del aula y en segunda posicion un objeto
+  //con las propiedades division y abanderado teniendo esta ultima un valor booleano
+  //devolver un nuevo arreglo con cada aula que tenga true en abanderado
+  //representandola por el año y la division respectivamente
+  //Ej: aulas = [
+  //              [1, {division:"a", abanderado: true}],
+  //              [1, {division:"b", abanderado: false}],
+  //                                                       ]
+  // resuesta: ["1a"]
+  //Tu código:
+
+}
+  
+
 // No modificar nada debajo de esta línea
 // --------------------------------
 
@@ -59,5 +76,6 @@ module.exports = {
     amoungUs,
     grupalOrIndividual,
     numSeguido,
-    manejoDeArreglos
+    manejoDeArreglos, 
+    premios
  };
