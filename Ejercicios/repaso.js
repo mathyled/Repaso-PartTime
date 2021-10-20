@@ -7,13 +7,13 @@ function amoungUs(tripulacion, impostor){
     //     impostor = ["azul"]
     //     inocentes = ["verde"]
     //Tu codigo:
-
+    
 }
 
 function grupalOrIndividual(deportes, modoDeJuego){
     //Esta funcion recibe un arreglo de objetos y un string
     // cada objeto es un deporte con las propiedades 
-    // nombre y modo este ultimo indicando si es un
+    // nombre y modo, este ultimo indicando si es un
     // deporte "grupal" o "individual" y el string puede contener
     // la palabra "grupal" o "individual" 
     //Armar una funcion que devuelva un nuevo array
@@ -29,7 +29,7 @@ function grupalOrIndividual(deportes, modoDeJuego){
 function numSeguido(numeros){
     //Esta funcion recibe como parametro un array de numeros
     // devolver true si hay 2 o mas numeros iguales seguidos
-    // en caso contrario devolver falso
+    // en caso contrario devolver false
     // Ej: numeros = [1, 2, 3, 40, 2, 2, 0]
     // respuesta: true
     // Tu código:
@@ -41,13 +41,19 @@ function manejoDeArreglos(carrito){
     // cada objeto es un producto que estamos comprando
     // con las propiedades nombre, id y precio
     // tenemos que armar un carrito de compra que devuelva el 
-    // precio final teniendo en cuenta que hay una oferta que 
-    // hay una promocion que deja gratis los productos de menos de 500$
+    // precio final teniendo en cuenta que hay una oferta que
+    // que deja gratis los productos de menos de 500$
     // en primera instancia devolver un nuevo arreglo que solo 
     // tenga los precios de cada objeto utilizando .map
     // luego devolver un nuevo objeto que filtre los precios que sean
     // mayores a 500 usando .filter
     // por ultimo devolver la suma de todos los resultados usando .reduce
+    // Ej: [
+    //     {nombre: "libro", precio: 1500, id: 1},
+    //     {nombre: "planta", precio: 3000, id: 2},
+    //     {nombre: "maceta", precio: 300, id: 3}
+    // ]
+    // Respuesta: 4500
     // Tu código:
 
 }
