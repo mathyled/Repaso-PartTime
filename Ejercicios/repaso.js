@@ -68,6 +68,13 @@ function premios(aulas){
 
 }
   
+function invertirString(string){
+    //Hacer una funcion que devuelva el string que se pasa por parametro 
+    // pero invertido
+    //Ej: "egnellahClEobeurpAoy" => "yoAprueboElChallenge"
+    //Tu código:
+    
+}
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -77,5 +84,6 @@ module.exports = {
     grupalOrIndividual,
     numSeguido,
     manejoDeArreglos, 
-    premios
+    premios,
+    invertirString
  };

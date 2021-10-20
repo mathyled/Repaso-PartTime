@@ -5,6 +5,7 @@ const {
     numSeguido,
     manejoDeArreglos,
     premios,
+    invertirString,
 } = require('../repaso');
 
 describe('amoungUs(tripulacion, impostor)', function() {
@@ -37,5 +38,11 @@ describe('amoungUs(tripulacion, impostor)', function() {
   describe('premios(aulas)', function() {
     it('Deberias devolver un arreglo con las aulas con abanderados', function() {
       expect(premios([[1, {division:"a", abanderado: true}],[1, {division:"b", abanderado: false}], [2, {division:"a", abanderado: false}], [2, {division:"b", abanderado: true}]])).toEqual(["1a", "2b"]);
+    });
+  });
+
+  describe('invertirString(strng)', function() {
+    it('Deberias devolver el string invertido', function() {
+      expect(invertirString("egnellahClEobeurpAoy")).toEqual("yoAprueboElChallenge");
     });
   });
