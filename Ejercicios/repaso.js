@@ -93,9 +93,9 @@ function premios(aulas){
 
   var aban=[];
   for (let i = 0; i < aulas.length; i++) {
-      if( aulas[i].abanderado=== true) { aban.push(aulas[i][0] + aulas[i].division)}
-      
-  }
+      if( aulas[i][1].abanderado=== true) { 
+          aban.push(aulas[i][0] + aulas[i][1].division)}
+       }
   
 return aban;
 }
