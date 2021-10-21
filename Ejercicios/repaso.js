@@ -26,9 +26,15 @@ function grupalOrIndividual(deportes, modoDeJuego){
     //     respuesta si se pasa "grupal" por parametro: ["football"]
     //     respuesta si se pasa "individual" por parametro : ["ajedrez"]
     // Tu código:
-    
-
+    var juegan=[];
+  for (let i = 0; i < deportes.length; i++) {
+     if(deportes[i].modo===modoDeJuego){
+juegan.push(deportes[i].nombre)
+     }
+  }
+  return juegan;
 }
+
 
 function numSeguido(numeros){
     //Esta funcion recibe como parametro un array de numeros
@@ -63,8 +69,13 @@ function manejoDeArreglos(carrito){
     // ]
     // Respuesta: 4500
     // Tu código:
+var precios=carrito.map(function(i){
+    return i.precio;}).filter(function(i){ 
+        return i > 500}).reduce(function(acc,i) {
+         return acc + i; })
+   return precios;
+        }
 
-}
 
 function premios(aulas){
   //Una escuela va a entregar premios a las aulas que tengan abanderados
@@ -80,6 +91,13 @@ function premios(aulas){
   // resuesta: ["1a"]
   //Tu código:
 
+  var aban=[];
+  for (let i = 0; i < aulas.length; i++) {
+      if( aulas[i].abanderado=== true) { aban.push(aulas[i][0] + aulas[i].division)}
+      
+  }
+  
+return aban;
 }
   
 function invertirString(string){
