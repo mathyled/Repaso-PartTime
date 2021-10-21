@@ -7,7 +7,10 @@ function amoungUs(tripulacion, impostor){
     //     impostor = ["azul"]
     //     inocentes = ["verde"]
     //Tu codigo:
-    
+    var inocentes=tripulacion.filter(function(item){
+        if(item!==impostor){ return item}
+    })
+return inocentes;
 }
 
 function grupalOrIndividual(deportes, modoDeJuego){
@@ -23,7 +26,8 @@ function grupalOrIndividual(deportes, modoDeJuego){
     //     respuesta si se pasa "grupal" por parametro: ["football"]
     //     respuesta si se pasa "individual" por parametro : ["ajedrez"]
     // Tu código:
- 
+    
+
 }
 
 function numSeguido(numeros){
@@ -33,7 +37,11 @@ function numSeguido(numeros){
     // Ej: numeros = [1, 2, 3, 40, 2, 2, 0]
     // respuesta: true
     // Tu código:
-        
+     for (let i = 0; i < numeros.length; i++) {
+        if(numeros[i]===numeros[i+1]) { return true }
+         
+     }
+        return false;
 }
 
 function manejoDeArreglos(carrito){
@@ -79,7 +87,11 @@ function invertirString(string){
     // pero invertido
     //Ej: "egnellahClEobeurpAoy" => "yoAprueboElChallenge"
     //Tu código:
-    
+    var aux="";
+    for (let i = 0; i < string.length; i++) {
+        aux=string[i]+aux;  
+    }
+    return aux;
 }
 
 //-----------EXITOS EN EL CHALLENGE!!!!!!!!!!!!!!!!!!
